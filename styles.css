@@ -1,9 +1,22 @@
 .col {
   float: left;
+  margin-left: 1em;
 }
 
 .circle {
   width: 2em;
   height: 2em;
   border-radius: 2em;
+  border: 0.1em black solid;
+  display: inline-block;
+}
+
+.box{
+  height: 10em;
+  width: 10em;
+  border: 0.1em black solid;
+}
+
+.row {
+  margin-bottom: 2em;
 }
