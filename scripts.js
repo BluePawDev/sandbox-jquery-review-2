@@ -12,6 +12,8 @@ function  onReady(){
 
   // empty-box button click
   $('#empty-box').on('click', emptyBox);
+
+  // fill the box
 }
 
 function changeTitleColor(){
@@ -20,4 +22,10 @@ function changeTitleColor(){
 
 function emptyBox(){
   // remove contents of the box
+}
+
+function fillTheBox(message){
+  var $p = $('<p>');
+  $p.append(message);
+  $('.box').append($p);
 }
