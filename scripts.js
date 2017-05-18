@@ -1,4 +1,23 @@
-console.log('javascript source!');
-console.log('jquery sourced!');
+console.log('JavaScript/jQuery sourced!');
 
-$('')
+$(onReady); // short-hand for document.ready
+
+function  onReady(){
+  console.log('loaded JS');
+  // register events
+
+
+  //cicrle click
+  $('.circle').on('click', changeTitleColor);
+
+  // empty-box button click
+  $('#empty-box').on('click', emptyBox);
+}
+
+function changeTitleColor(){
+  // update color of h1 element based on color of circle clicked
+}
+
+function emptyBox(){
+  // remove contents of the box
+}
